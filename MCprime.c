@@ -40,11 +40,13 @@ int main(){
     //skip all marked numbers
     for(;array[k]!=0;k=k+2){}
   }
-
-  for( i = 0;i<n;++i){
+  int pcount = 1;
+  for( i = 2;pcount<=100 && i<n;++i){
     if (array[i]==0)
     {
-      printf("%d\n",i);
+
+      printf("%d:  %d\n",pcount ,i);
+      ++pcount;
     }
   }
   diff = clock() - start;
