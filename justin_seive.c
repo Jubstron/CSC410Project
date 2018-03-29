@@ -4,6 +4,11 @@
 * CSC 410
 */
 
+/*
+* Notes:
+*   - I plan to switch to a true boolean array
+*   - The loops is not currently not checking/ accouting for duplicates
+*/
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
