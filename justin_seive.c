@@ -24,7 +24,7 @@ int main(){
   }
 
   // Mark all multiplicants as false
-  for(int i = 2; i < ceil(sqrt(n)); i++){
+  for(int i = 2; i < sqrt(n); i++){
     if(arr[i-1]){
       for(int j = 2; j < (n/i)+1; j++){
         arr[(i*j)-1] = 0;
