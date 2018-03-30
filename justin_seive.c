@@ -10,18 +10,21 @@
 *   - The loops is not currently not checking/ accouting for duplicates
 */
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 #include <math.h>
 #include <time.h>
 
 int main(){
   int n = 0;
+  int count = 0;
   setbuf(stdout, NULL);
 
   printf("Enter n: ");
   scanf("%d", &n);
-  int arr[n];
+  bool *arr = malloc(n*sizeof(bool));
 
-  //time_t start = time(NULL);
+  time_t start = time(NULL);
 
   // Fill the array with n numbers defaulted to true (1)
   for(int i = 0; i < n; i++){
@@ -36,15 +39,18 @@ int main(){
       }
     }
   }
-  //time_t end = time(NULL);
+  time_t end = time(NULL);
 
   // Print the primes
-  //printf("\nTime taken: %d seconds\nPrimes:\n", end-start);
+  printf("\nPrimes:\n");
   for(int i = 1; i < n; ++i){
-    if(arr[i] == 1){
-      printf(" %d\n", i+1);
+    if(arr[i] == 1 && count <= 100){
+      printf(" %d\t", i+1);
+      count++;
     }
   }
+  printf("\n\nTime taken: %0.3g seconds\n", difftime(end, start));
 
+  free(arr);
   return 0;
 }
