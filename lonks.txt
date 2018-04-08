@@ -1,0 +1,5 @@
+https://mmfcordeiro.files.wordpress.com/2012/10/mmfcordeiro-parallelization-of-the-sieve-of-eratosthenes.pdf
+http://heather.cs.ucdavis.edu/~matloff/OpenMP/Examples/NM/PrimesOMP.c
+http://create.stephan-brumme.com/eratosthenes/
+https://github.com/marius92mc/sieve-of-eratosthenes-with-MPI/blob/master/src/eratosthenes_initial.c
+http://cse.iitkgp.ac.in/~debdeep/courses_iitkgp/PAlgo/Autumn16-17/slides/Lect2Sieve.pdf
