@@ -16,7 +16,7 @@ int main(){
 
 
   //printf("test\n");
-  const int n = 100; //100 million ~1.3 seconds
+  const int n = 10000000; //100 million ~1.3 seconds
   int k = 2;
   //int array[n];
   int *array = malloc(n * sizeof(int));
@@ -50,7 +50,6 @@ int main(){
     }
   }
   diff = clock() - start;
-
   int msec = diff * 1000 / CLOCKS_PER_SEC;
   printf("Time taken %d seconds %d milliseconds\n", msec/1000, msec%1000);
   free(array);
